@@ -4,7 +4,9 @@ WHO provides [child growth standards][WHO std] for various measures. For example
 
 ## Measure and Record
 
-Download desired percentile Excel tables from [WHO site][WHO std]. Measure and record actual data points in the same Excel tables alongside the standard percentiles. Follow different practices for time-series measure and non-time-series measure.
+Download desired percentile Excel tables from [WHO site][WHO std]. May further combine correlated Excel files into a single one with multiple sheets for easier management. For example, create an Excel file containing all measures for age 0-13 weeks with each sheet for a different measure.
+
+Measure and record actual data points in the same Excel tables alongside the standard percentiles. Follow different practices for time-series measure and non-time-series measure.
 
 ### Time-Series Measure
 
@@ -35,8 +37,8 @@ The percentiles `P5`, `P50`, `P95` are aligned to `Length` while actual measure 
 
 Plot with `plot.py --path PATH [--margin {3,5,10}]`.
 
-- `path`: Path to the Excel table file to plot.
-- `margin`: Plot actual data points along with percentiles `P(margin)`, `P50`, `P(100-margin)` for comparison. Default is `5`.
+- `path`: Plot all sheets in the Excel file at path `path`, one at a time.
+- `margin`: Plot actual data points along with standard percentiles `P(margin)`, `P50`, `P(100-margin)` for comparison. Default is `5`.
 
 For example, the following chart is plotted with `plot.py --path sample`.
 
