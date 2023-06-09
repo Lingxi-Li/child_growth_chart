@@ -37,7 +37,7 @@ The percentiles `P5`, `P50`, `P95` are aligned to `Length` while actual measure 
 
 Plot with `plot.py --path PATH [--margin {3,5,10}]`.
 
-- `path`: Plot all sheets in the Excel file at path `path`, one at a time.
+- `path`: Plot all sheets in the Excel file at path `path`.
 - `margin`: Plot actual data points along with standard percentiles `P(margin)`, `P50`, `P(100-margin)` for comparison. Default is `5`.
 
 For example, the following chart is plotted with `plot.py --path sample`.

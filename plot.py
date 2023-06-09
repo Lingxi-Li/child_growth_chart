@@ -15,6 +15,7 @@ path = args.path if os.path.splitext(args.path)[1] else f'{args.path}{ext}'
 margin = args.margin
 
 def plot(title: str, frame: pd.DataFrame):
+    plt.figure()
     label_ref_x = frame.columns[0]
     label_ref_y_high = f'P{100-margin}'
     label_ref_y_mid  = f'P{50}'
@@ -38,8 +39,8 @@ def plot(title: str, frame: pd.DataFrame):
     plt.grid(True)
     plt.title(title)
     plt.legend()
-    plt.show()
 
 frames = pd.read_excel(path, sheet_name=None)
 for name, frame in frames.items():
     plot(name, frame)
+plt.show()
