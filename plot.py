@@ -40,7 +40,10 @@ def plot(title: str, frame: pd.DataFrame):
     plt.title(title)
     plt.legend()
 
-frames = pd.read_excel(path, sheet_name=None)
-for name, frame in frames.items():
-    plot(name, frame)
-plt.show()
+try:
+    frames = pd.read_excel(path, sheet_name=None)
+    for name, frame in frames.items():
+        plot(name, frame)
+    plt.show()
+except FileNotFoundError:
+    print(f'File not found at "{path}"')
