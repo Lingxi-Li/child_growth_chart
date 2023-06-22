@@ -33,6 +33,8 @@ Non-time-series measures are those not sampled by age, like weight for length (n
 
 The percentiles `P5`, `P50`, `P95` are aligned to `Length` while actual measure `Y` is aligned to `X`. Since `Length` and `X` are independent, there can be more rows of `Y` than percentiles.
 
+Dealing with non-time series is tricky. Suggest using BMI for age rather than weight for length/height and sticking to time series.
+
 ## Plot
 
 Plot with `plot.py --path PATH [--margin {3,5,10}]`.
