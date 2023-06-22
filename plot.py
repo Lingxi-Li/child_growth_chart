@@ -47,3 +47,5 @@ try:
     plt.show()
 except FileNotFoundError:
     print(f'File not found at "{path}"')
+except KeyError as ex:
+    print(f'Column "{ex.args[0]}" not found in sheet "{name}"')
