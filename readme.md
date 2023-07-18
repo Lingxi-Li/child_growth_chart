@@ -40,7 +40,7 @@ Dealing with non-time series is tricky. Suggest using BMI for age rather than we
 Plot with `plot.py --path PATH [--margin {3,5,10}]`.
 
 - `path`: Plot all sheets in the Excel file at path `path`.
-- `margin`: Plot actual data points along with standard percentiles `P(margin)`, `P50`, `P(100-margin)` for comparison. Default is `5`.
+- `margin`: Plot actual data points along with standard percentiles `P(margin)`, `P50`, `P(100-margin)` for comparison. Default is `3`.
 
 For example, the following chart is plotted with `plot.py --path sample`.
 

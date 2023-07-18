@@ -9,7 +9,7 @@ ext = '.xlsx'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--path', required=True)
-parser.add_argument('--margin', type=int, choices=[3,5,10], default=5)
+parser.add_argument('--margin', type=int, choices=[3,5,10], default=3)
 args = parser.parse_args()
 path = args.path if os.path.splitext(args.path)[1] else f'{args.path}{ext}'
 margin = args.margin
